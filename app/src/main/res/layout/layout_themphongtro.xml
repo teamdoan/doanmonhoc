@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+            <EditText
+                android:id="@+id/edTenQuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tenphongtro"
+                />
+
+            <EditText
+                android:id="@+id/edGiaToiDa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/giatoida"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/edGiaToiThieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/giatoithieu"
+                android:inputType="number"
+                />
+            <EditText
+                android:id="@+id/ed_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/chitietdatphong"
+                />
+
+            <RadioGroup
+                android:id="@+id/rdgTrangThai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rdGiaoHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datphong"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rdKhongGiaoHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/khongdatphong"
+                    android:checked="true"
+                    />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnGioMoCua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/giomocua"
+                    android:textAllCaps="false"
+                    />
+
+                <Button
+                    android:id="@+id/btnGioDongCua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/giodongcua"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_themvideo"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:id="@+id/imgVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/khungTienTich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/khungChuaChiNhanh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerKhuVuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imgHinhQuan1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_themhinhanh" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imgHinhQuan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_mini_themhinh"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgHinhQuan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_mini_themhinh"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgHinhQuan4"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_mini_themhinh"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgHinhQuan5"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_mini_themhinh"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgHinhQuan6"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/img_mini_themhinh"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnThemQuanAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/luuphongtro"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

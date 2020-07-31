@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nennhat"
+    tools:context=".View.ChiTietDatPhongActivity">
+
+    <ImageView
+        android:id="@+id/imgs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size180dp"
+        android:src="@mipmap/motel3"/>
+    <TextView
+        android:padding="@dimen/size80dp"
+        android:layout_below="@id/imgs"
+        android:id="@+id/txtChiTietDatPhong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="Xin vui lòng liên hệ :0989181720"
+        android:textSize="@dimen/size40sp"
+        android:textStyle="bold"
+        android:textColor="@color/mauden"/>
+>
+
+
+</RelativeLayout>

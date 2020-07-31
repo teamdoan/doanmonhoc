@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen_tro"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nennhat"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@mipmap/motel3" />
+
+            <EditText
+                android:id="@+id/edEmailDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_perm_identity_white_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/mauden"
+                android:textColorHint="@color/trang" />
+
+            <EditText
+                android:id="@+id/edPasswordDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/matkhau"
+                android:inputType="textPassword"
+                android:textColor="@color/mauden"
+                android:textColorHint="@color/trang" />
+
+            <EditText
+                android:id="@+id/edNhapLaiPasswordDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/nhaplaimatkhau"
+                android:inputType="textPassword"
+                android:textColor="@color/mauden"
+                android:textColorHint="@color/trang" />
+
+            <Button
+                android:id="@+id/btnDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_button"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="@string/dangky"
+                android:textAllCaps="false"
+                android:textColor="@color/mauden" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

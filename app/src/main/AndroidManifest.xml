@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nhatro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/motel3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.ChiTietDatPhongActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBEg9WUb7xVdfOEyiaGhALLBXrl-IFp65U" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity android:name=".View.SlashScreenActivity"></activity>
+        <activity android:name=".View.DangNhapActivity"></activity>
+        <activity android:name=".View.TrangChuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.DangKyActivity"></activity>
+        <activity android:name=".View.KhoiPhucMatKhauActivity"></activity>
+        <activity android:name=".View.ChiTietPhongTroActivity"></activity>
+        <activity android:name=".View.HienThiChiTietBinhLuanActivity"></activity>
+        <activity android:name=".View.DanDuongToiPhongTroActivity"></activity>
+        <activity android:name=".View.BinhLuanActivity"></activity>
+        <activity android:name=".View.ChonHinhBinhLuanActivity"></activity>
+        <activity android:name=".View.ThemPhongTroActivity"></activity>
+        <activity android:name=".View.PhoneLoginActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size10dp"
+    android:background="@color/colorAccent"  >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+
+        <View
+            android:id="@+id/khungTinhNang"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/tranparentWhile"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txtDiaChiPhongTro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size10dp"
+                />
+
+            <TextView
+                android:id="@+id/txtGioiHanGia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10.000 - 50.000"
+                android:padding="@dimen/size10dp"
+                />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1dp"
+        android:background="@color/trang"
+        android:layout_marginTop="@dimen/size5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/khungTienTich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/trang"
+        >
+
+    </LinearLayout>
+
+
+</LinearLayout>

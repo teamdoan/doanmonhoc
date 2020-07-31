@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounddangnhap"
+
+    android:backgroundTint="@color/mauxanhvang"
+    tools:context="com.example.nhatro.View.SlashScreenActivity">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="198dp"-->
+<!--        app:srcCompat="@drawable/foodytext" />-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/size300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size80dp"
+        android:src="@mipmap/motel3" />
+
+    <TextView
+        android:id="@+id/txtPhienban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/txtTenCongTy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tencongty"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtTenCongTy"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/size20dp"
+            android:layout_height="@dimen/size20dp"
+            android:layout_weight="1"
+            android:indeterminateTint="@android:color/background_light" />
+
+
+        <TextView
+            android:id="@+id/txtTai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dangtai"
+            android:textColor="@android:color/background_light"
+            tools:text="@string/dangtai" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparentBackgroundDangnhap">#33000000</color>
+    <color name="colorFacebook">#189aca</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBackgroungTrangChu">#CCC</color>
+    <color name="tranparentWhite">#CCFFFFFF</color>
+    <color name="wallet_holo_blue_light">#8BC34A</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="mauden">#000000</color>
+    <color name="mauxanhvang">#99FF33</color>
+    <color name="nennhat">#B366FF33</color>D
+    <color name="trang">#FFFFFF</color>
+    <color name="maudangnhap">#FFFFCC</color>
+    <color name="backgroudtrangchu">#CCC</color>
+    <color name="tranparentWhile">#CCFFFFFF</color>
+    <color name="colorWhite">#FFF</color>
+
+</resources>

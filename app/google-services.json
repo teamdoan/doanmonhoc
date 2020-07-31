@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "9564169062",
+    "firebase_url": "https://nhatro-515be.firebaseio.com",
+    "project_id": "nhatro-515be",
+    "storage_bucket": "nhatro-515be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9564169062:android:f5c72cac6e8f19cebf1ea7",
+        "android_client_info": {
+          "package_name": "com.example.nhatro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9564169062-b9kjoql1g6dais1kjs9t3qad3ocg9dv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdkl5dlRRf70vwDRoS58aPIqMycJJjvkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9564169062-b9kjoql1g6dais1kjs9t3qad3ocg9dv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

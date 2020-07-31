@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viết bình luận"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/txtDangBinhLuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:text="@string/dang"
+            android:textColor="@color/colorAccent"
+            android:padding="5dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroungTrangChu"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtTenQuanAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gogi house"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txtDiaChiQuanAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="323 Tran Hung dao"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edTieuDeBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề ( không bắt buộc )"
+        android:textSize="12sp"
+        android:background="#FFF"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackgroungTrangChu"
+        />
+
+    <EditText
+        android:id="@+id/edNoiDungBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Viết trên 100 từ, đúng chính tả, ngôn từ văn hóa, không spam ... để được điểm thưởng"
+        android:textSize="12sp"
+        android:gravity="top"
+        android:layout_weight="1"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChonHinhBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBackgroungTrangChu"
+        >
+
+        <ImageButton
+            android:id="@+id/btnChonHinh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_photo_camera_black_24dp"
+            android:layout_weight="1"
+            android:background="@color/colorBackgroungTrangChu"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_label_black_24dp"
+            android:layout_weight="1"
+            android:background="@color/colorBackgroungTrangChu"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_stars_black_24dp"
+            android:layout_weight="1"
+            android:background="@color/colorBackgroungTrangChu"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
