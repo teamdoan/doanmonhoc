@@ -29,6 +29,7 @@ public class ChiTietDatPhongActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chi_tiet_dat_phong);
+        maPhongTro = getIntent().getStringExtra("roomId");
 
         txtChiTietDatPhong = findViewById(R.id.txtChiTietDatPhong);
         nodeChiTietDatPhong = FirebaseDatabase.getInstance().getReference();
@@ -66,18 +67,14 @@ public class ChiTietDatPhongActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                DataSnapshot dataSnapshotPhongTro = dataSnapshot.child("phongtros");
-                for(DataSnapshot snapshot : dataSnapshotPhongTro.getChildren()){
-                       DataSnapshot dataSnapshotSDTPhongTro = snapshot.child(dataSnapshotPhongTro.getKey());
-                    DataSnapshot dataSnap = dataSnapshotSDTPhongTro.child("sdt");
-                    if(dataSnap != null) {
-                        Object o = dataSnap.getValue(); // chỉ đúng khi có 1 sđt.
-                        if (o != null) {
-                            txtChiTietDatPhong.setText("Xin vui lòng liên hệ: " +o.toString());
-                            return;
-                        }
+                DataSnapshot dataSnapshotPhongTro = dataSnapshot.child("phongtros").child(maPhongTro);
+                if(dataSnapshotPhongTro != null) {
+                    DataSnapshot o = dataSnapshotPhongTro.child("sdt");
+                    if (o != null) {
+                        txtChiTietDatPhong.setText("Xin vui lòng liên hệ: " +o.getValue().toString());
                     }
                 }
+
             }
 
         });

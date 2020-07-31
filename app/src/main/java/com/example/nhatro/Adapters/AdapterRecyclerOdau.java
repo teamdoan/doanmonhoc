@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -92,6 +93,7 @@ public class AdapterRecyclerOdau extends RecyclerView.Adapter<AdapterRecyclerOda
                @Override
                public void onClick(View v) {
                     Intent id = new Intent(context, ChiTietDatPhongActivity.class);
+                   id.putExtra("roomId", phongTroModel.getMaphongtro());
                      context.startActivity(id);
                 }
             });
