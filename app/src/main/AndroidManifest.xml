@@ -24,13 +24,15 @@
             android:value="@string/app_id" />
 
         <activity android:name=".View.SlashScreenActivity"></activity>
-        <activity android:name=".View.DangNhapActivity"></activity>
-        <activity android:name=".View.TrangChuActivity">
+        <activity android:name=".View.DangNhapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".View.TrangChuActivity">
+
         </activity>
         <activity android:name=".View.DangKyActivity"></activity>
         <activity android:name=".View.KhoiPhucMatKhauActivity"></activity>

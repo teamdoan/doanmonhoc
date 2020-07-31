@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,13 +68,15 @@ public class PhoneLoginActivity extends AppCompatActivity {
                     loadingBar.setMessage("please wait,while we are authenticating your phone...");
                     loadingBar.setCanceledOnTouchOutside(false);
                     loadingBar.show();
-
+                    mAuth.setLanguageCode("vi");
+                    phoneNumber = "+84"+phoneNumber.substring(1);
                     PhoneAuthProvider.getInstance().verifyPhoneNumber(
                             phoneNumber,        // Phone number to verify
                             60,                 // Timeout duration
                             TimeUnit.SECONDS,   // Unit of timeout
                             PhoneLoginActivity.this,               // Activity (for callback binding)
                             callbacks);        // OnVerificationStateChangedCallbacks
+
                 }
 
             }
